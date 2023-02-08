@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  background-color: #272822;
+  color: #ffffff;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.search {
+  margin-bottom: 3rem;
+}
+.searchTerm {
+  width: 20rem;
+  height: 1.5rem;
+  padding: 0.3rem;
+  outline: none;
+  border: none;
+}
+.search .searchbtn {
+  height: 1.5rem;
+  width: 4rem;
+  background-color: #00f9ed;
+  color: #272822;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.search .searchbtn:hover {
+  background-color: #17ccc3;
+}
+
+.main-container {
+  background-color: #fff;
+  color: black;
+  width: 40vw;
+  height: 40vh;
+  border-radius: 1.5rem;
+}
+.main-container .weatherIcon {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+.weatherIcon .iconSize {
+  font-size: 6rem;
+}
+.main-container .weather-container {
+  display: flex;
+  width: 100%;
+}
+.weatherInfo {
+  background-color: #272822;
+  width: 70%;
+  height: 7rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.temperature span {
+  font-size: 3rem;
+  padding-left: 0.5rem;
+}
+.weatherInfo .weatherCondition {
+  font-size: 2rem;
+}
+.weather-container .date {
+  background-color: #00f9ed;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  padding: 0.5rem;
+}
+.down-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.7rem;
+}
+.down-container .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  gap: 1rem;
+}
+
+.iconColor {
+  color: #00f9ed;
+}
+
+@media (max-width: 1119px) {
+  .weather-container .date {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 928px) {
+  .weatherInfo {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 781px) {
+  .searchTerm {
+    width: 12rem;
+  }
+  .search .searchbtn {
+    width: 3rem;
+  }
+  .main-container {
+    width: max-content;
+    height: max-content;
+  }
+  .temperature span {
+    font-size: 1.5rem;
+  }
+  .weatherInfo {
+    gap: 1rem;
+  }
+  .weatherInfo .weatherCondition {
+    font-size: 1rem;
+  }
+  .weather-container .date {
+    font-size: 1rem;
+  }
+  .down-container {
+    margin-bottom: 25px;
+  }
+
+  .down-container .section {
+    gap: 0.3rem;
+    margin-left: 0.3rem;
+  }
+}
